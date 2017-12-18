@@ -7,7 +7,7 @@
 - [x] Also inside the <div> element, append two <button> elements ('Swap' and 'Delete')
 - [x] Any <div> created using 'Generate' should have a red background color
 - [x] Clicking a 'Swap' <button> changes parent background color from red to yellow
-- [ ] Clicking the 'Swap' <button> again changes background color back to red
+- [x] Clicking the 'Swap' <button> again changes background color back to red
 - [ ] Clicking 'Delete' <button> removes its parent <div> container (and all of its contents)
 
 ## NOTES

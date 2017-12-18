@@ -17,6 +17,6 @@ function appendToDom() {
 }
 
 function swapColors () {
-  $(this).parent().css('background-color', 'yellow');
+  $(this).parent().toggleClass('genDiv');
 
 }
