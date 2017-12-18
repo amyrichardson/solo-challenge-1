@@ -1,5 +1,6 @@
 console.log('js sourced');
 
+var buttonClicks = 0;
 $(document).ready(readyNow);
 
 function readyNow() {
@@ -10,12 +11,15 @@ $('body').on('click', '#delete', deleteContainer);
 }
 
 function appendToDom() {
-  console.log('button clicked');
+  buttonClicks++;
+  console.log('button', buttonClicks);
   $('body').append('<div class="genDiv"></div>');
-  $('div').html('<p>' +$('div').length + '</p>');
-  $('div').append('<button id="swap">Swap</button');
-  $('div').append('<button id="delete">Delete</button');
+  $('.genDiv').append('<p>' + buttonClicks + '</p>');
+  $('.genDiv').append('<button id="swap">Swap</button');
+  $('.genDiv').append('<button id="delete">Delete</button');
+  $('.genDiv').toggleClass('genDiv');
 }
+
 
 function swapColors () {
   $(this).parent().toggleClass('genDiv');
